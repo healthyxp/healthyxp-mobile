@@ -1,19 +1,20 @@
 import React from "react";
-import { Text, TextInput, View } from "react-native";
-import { styles } from "./style";
+import { Text, View } from "react-native";
 import { Input } from "../../components/BaseComponents/Input";
+import { styles } from "./styles";
 
 export const Login = () => {
 	return (
 		<View style={styles.container}>
 			<Text>Login</Text>
 			<Input
-				label="Usuário"
-				placeholder="usuario"
+				icon="mail"
+				placeholder="Email"
 			/>
 			<Input
-				label="Senha"
-				placeholder="senha"
+				icon="lock-closed"
+				placeholder="Senha"
+				isPassword={true}
 			/>
 		</View>
 	);
