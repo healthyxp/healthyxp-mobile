@@ -1,7 +1,7 @@
-import { Ionicons } from "@expo/vector-icons";
-import { useRef, useState } from "react";
-import { TextInput, TextInputProps, View } from "react-native";
-import { styles } from "./styles";
+import { Ionicons } from '@expo/vector-icons';
+import { useRef, useState } from 'react';
+import { TextInput, TextInputProps, View } from 'react-native';
+import { styles } from './styles';
 
 interface InputProps extends TextInputProps {
   icon?: keyof typeof Ionicons.glyphMap;
@@ -28,23 +28,23 @@ export const Input = ({ icon, isPassword = false, ...rest }: InputProps) => {
           name={icon}
           size={20}
           onPress={focusOnTextInput}
-          color={"#D9D9D9"}
+          color={'#D9D9D9'}
         />
       }
       <TextInput
         ref={textInputRef}
         style={styles.input}
-        clearButtonMode="always" //TODO: só funciona no IOS, testar se funciona mesmo
+        clearButtonMode='always' //TODO: só funciona no IOS, testar se funciona mesmo
         secureTextEntry={secureTextEntry}
         {...rest}
       />
       {isPassword &&
         <Ionicons
           style={styles.icon}
-          name={secureTextEntry ? "eye-off" : "eye"}
+          name={secureTextEntry ? 'eye-off' : 'eye'}
           size={25}
           onPress={seePassword}
-          color={"#D9D9D9"}
+          color={'#D9D9D9'}
         />
       }
     </View>
