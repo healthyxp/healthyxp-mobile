@@ -1,8 +1,8 @@
 import React from 'react';
 import { Text, View } from 'react-native';
+import { Button } from '../../components/BaseComponents/Button';
 import { Input } from '../../components/BaseComponents/Input';
 import { styles } from './styles';
-import { Button } from '../../components/BaseComponents/Button';
 
 export const Login = () => {
 	return (
@@ -18,7 +18,7 @@ export const Login = () => {
 				isPassword={true}
 			/>
 
-			<Button />
+			<Button title='Entrar' />
 		</View>
 	);
 };
