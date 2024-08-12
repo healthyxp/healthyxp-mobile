@@ -34,7 +34,7 @@ export const Input = ({ icon, isPassword = false, ...rest }: InputProps) => {
       <TextInput
         ref={textInputRef}
         style={styles.input}
-        clearButtonMode='always' //TODO: só funciona no IOS, testar se funciona mesmo
+        clearButtonMode={isPassword ? 'never' : 'always'}
         secureTextEntry={secureTextEntry}
         {...rest}
       />
