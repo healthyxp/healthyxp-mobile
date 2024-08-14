@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { Image, Text, View, ViewProps } from "react-native";
-import { styles } from "./styles";
-const image = require("../../../assets/images/logo.png"); // TODO: não consigo usar import e eslint diz para não usar require
+import React, { useEffect, useState } from 'react';
+import { Image, Text, View, ViewProps } from 'react-native';
+import { styles } from './styles';
+import image from '../../../assets/images/logo.png';
 
 interface LogoProps extends ViewProps {
   divider?: number;
