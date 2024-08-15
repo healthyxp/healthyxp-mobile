@@ -1,8 +1,9 @@
 import { StyleSheet } from 'react-native';
+import { styleConstants } from '../../../Utils/styleUtils';
 
 export const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#17DABE',
+    backgroundColor: styleConstants.color,
     height: 45,
     borderRadius: 10,
     alignItems: 'center',

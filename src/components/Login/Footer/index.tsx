@@ -1,9 +1,9 @@
 import React from 'react';
 import { Image, Text, TouchableOpacity, View } from 'react-native';
+import FacebookIcon from '../../../assets/images/facebook.png';
+import GoogleIcon from '../../../assets/images/google_2x.png';
 import { ContinueWith } from '../ContinueWith';
 import { styles } from './styles';
-import google from '../../../assets/images/google_2x.png';
-import facebook from '../../../assets/images/facebook.png';
 
 export const Footer = () => {
   return (
@@ -13,13 +13,13 @@ export const Footer = () => {
         <TouchableOpacity>
           <Image
             style={styles.logo}
-            source={google}
+            source={GoogleIcon}
           />
         </TouchableOpacity>
         <TouchableOpacity>
           <Image
             style={styles.logo}
-            source={facebook}
+            source={FacebookIcon}
           />
         </TouchableOpacity>
       </View>

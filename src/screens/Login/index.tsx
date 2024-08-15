@@ -1,15 +1,14 @@
 import React from 'react';
-import { StatusBar, Text, TouchableOpacity, View } from 'react-native';
+import { Text, TouchableOpacity, View } from 'react-native';
 import { Button } from '../../components/BaseComponents/Button';
 import { Input } from '../../components/BaseComponents/Input';
-import { Logo } from '../../components/BaseComponents/Logo';
+import { Logo } from '../../components/Logo';
 import { Footer } from '../../components/Login/Footer';
 import { styles } from './styles';
 
 export const Login = () => {
   return (
     <View>
-      <StatusBar translucent={false} backgroundColor={'#17DABE'} />
       <View style={styles.logo}>
         <Logo />
       </View>

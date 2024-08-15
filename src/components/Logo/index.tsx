@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { Image, Text, View, ViewProps } from 'react-native';
+//TODO: Procurar como colocar o import apartir da pasta src
+import HXPIcon from '../../assets/images/logo.png';
 import { styles } from './styles';
-import image from '../../../assets/images/logo.png';
 
 interface LogoProps extends ViewProps {
   divider?: number;
 }
 
-export const Logo = ({ divider }: LogoProps) => {
+export const Logo = ({ divider = 2 }: LogoProps) => {
   const [imageDimensions, setImageDimensions] = useState({ width: 0, height: 0 });
-  divider = divider ? divider : 2;
 
   useEffect(() => {
-    const { width, height } = Image.resolveAssetSource(image);
+    const { width, height } = Image.resolveAssetSource(HXPIcon);
     setImageDimensions({ width: width / divider, height: height / divider });
   }, []);
 
@@ -20,7 +20,7 @@ export const Logo = ({ divider }: LogoProps) => {
     <View>
       <Image
         style={[{ width: imageDimensions.width, height: imageDimensions.height }]}
-        source={image}
+        source={HXPIcon}
       />
       <Text style={styles.text}>HealthyXP</Text>
     </View>

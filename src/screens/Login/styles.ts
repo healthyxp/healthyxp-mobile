@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { styleConstants } from '../../Utils/styleUtils';
 
 export const styles = StyleSheet.create({
   body: {
@@ -12,7 +13,7 @@ export const styles = StyleSheet.create({
   },
 
   logo: {
-    backgroundColor: '#17DABE',
+    backgroundColor: styleConstants.color,
     width: '100%',
     height: 250,
     borderBottomRightRadius: 200,
@@ -22,7 +23,7 @@ export const styles = StyleSheet.create({
   },
 
   link: {
-    color: '#17DABE',
+    color: styleConstants.color,
     textDecorationLine: 'underline'
   },
 

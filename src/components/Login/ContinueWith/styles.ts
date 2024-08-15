@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { styleConstants } from '../../../Utils/styleUtils';
 
 export const styles = StyleSheet.create({
   container: {
@@ -17,7 +18,7 @@ export const styles = StyleSheet.create({
     flex: 1,
     height: 1,
     backgroundColor: 'transparent',
-    borderBottomColor: '#17DABE',
+    borderBottomColor: styleConstants.color,
     borderBottomWidth: 1,
     marginHorizontal: 5,
   }
