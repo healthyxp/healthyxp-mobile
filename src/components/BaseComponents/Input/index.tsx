@@ -1,7 +1,7 @@
-import { Ionicons } from "@expo/vector-icons";
-import React, { useRef, useState } from "react";
-import { TextInput, TextInputProps, View } from "react-native";
-import { styles } from "./styles";
+import { Ionicons } from '@expo/vector-icons';
+import React, { useRef, useState } from 'react';
+import { TextInput, TextInputProps, View } from 'react-native';
+import { styles } from './styles';
 
 interface InputProps extends TextInputProps {
   icon?: keyof typeof Ionicons.glyphMap;

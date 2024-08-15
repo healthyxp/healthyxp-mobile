@@ -14,5 +14,5 @@ export const Button = ({ title, ...rest }: ButtonProps) => {
     >
       <Text style={styles.text}>{title}</Text>
     </TouchableOpacity >
-  )
-}
+  );
+};
