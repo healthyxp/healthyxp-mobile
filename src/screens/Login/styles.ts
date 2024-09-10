@@ -36,6 +36,7 @@ export const styles = StyleSheet.create({
 
   button: {
     width: '100%',
-    alignItems: 'center'
+    alignItems: 'center',
+    margin: 10
   }
 });
